@@ -1,4 +1,4 @@
-                                                                       # BankistApp 
+                                                     # BankistApp 
 
 BankistApp was created on my way of my learnings javascript from the udemy course that i took,this was created with help of course. 
 
