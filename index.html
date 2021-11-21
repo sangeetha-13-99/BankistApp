@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankistApp</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="nav_bar">
+        <p class="welcome">Log in to get started</p>
+        <p ><img class="logo" src="pics/logo.png"></p>
+
+        <form class="login">
+            <input class="login_user user_input" type="text" placeholder="USER">
+            <input class="login_pswd user_input" type="text" placeholder="PIN">
+            <button class="userlogin_btn user_btn">→</button>
+        </form>
+    </nav> 
+
+    <div class="app"> 
+        <div class="balance">
+            <div>
+            <p class="balance_label">Current balance</p>
+            <p class="balance_date">
+            As Of <span >07/11/2021</span></p>
+            </div>
+            <p class="balance_amount">25000 $</p>
+        </div> 
+
+        <div class="movements">
+            <div class="movement_row"> 
+                <p class="movement_type movement_deposit">1 DEPOSIT</p>
+                <p class="movement_date">07/11/2021</p>
+                <p class="movement_amount">10000 $</p>
+            </div>
+            <div class="movement_row"> 
+                <p class="movement_type movement_withdraw">1 WITHDRAWAL</p>
+                <p class="movement_date">07/11/2021</p>
+                <p class="movement_amount">-5000 $</p>
+            </div>
+        </div> 
+
+        <div class="account">
+            <div class="transfer">
+                <p class="transfer_amount">Transfer money</p>
+                
+                <form class="transfer_login">
+                    <div class="label">
+                    <input class="transfer_user user_inputt" type="text" placeholder="USER">
+                    <label>Transfer to</label>
+                    </div>
+                    <div class="label">
+                    <input class="transfer_amt user_inputt" type="text" placeholder="Amount">
+                    <label> Amount</label>
+                    </div>
+                    <p class="user_btn tmoney_btn">→</p>
+                </form>
+                <!-- <div class="label">
+                    <p> Transfer to</p>
+                    <p> Amount</p>
+                </div> -->
+            </div>
+
+            <div class="request">
+                <p class="requestloan">Request loan</p>
+                
+                <form class="request_login">
+                    <div class="label">
+                    <input class="request_amount user_inputt" type="text" placeholder="Amount">
+                    <label>Amount</label>
+                </div>
+                <p class="user_btn loan_btn">→</p>
+                </form> 
+                <!-- <div class="label">
+                <p> Amount</p>
+                </div> -->
+            </div> 
+
+            <div class="close">
+                <p class="closeaccount">Close account</p>
+                
+                <form class="close_login">
+                    <div class="label">
+
+                    <input class="close_user user_inputt" type="text" placeholder="USER">
+                    <label>confirm user</label>
+                    </div>
+                    <div class="label">
+
+                    <input class="close_pin user_inputt" type="text" placeholder="PIN">
+                    <label>confirm pin</label>
+                    </div>
+                    <p class="user_btn close_btn">→</p>
+
+                </form>
+                <!-- <div class="label">
+                <p>confirm user</p>
+                <p>confirm pin</p> 
+                </div> -->
+                
+            </div>
+
+        </div>
+
+    <!-- </div>  -->
+<div class="summary">
+    <div class="in_outs"> 
+        <p>IN:<span id="amount-in">10000 $</span></p>
+        <p>OUT:<span id="amount-out">5000 $</span></p>
+        <p>INTEREST:<span id="amount-interest">100 $</span></p>
+
+    </div>
+    <div class="sort">
+        <p>↓</p>
+        <p>SORT</p> 
+    </div>
+    <div class="timer">
+        <p>You will be logged out in <span id="time"><strong>2:00</strong></span></p>
+    </div>
+    </div>
+</div> 
+
+
+
+<img src="#" alt="">
+
+<script src="script.js"></script>
+<!-- <script src="script1.js"></script> -->
+
+</body>
+</html>
